@@ -38,19 +38,27 @@ let users = [
 ];
 
 let usersContainer = document.getElementById("users");
-let userBox = '';
-users.forEach((user) => {
+renderUsers()
+
+function renderUsers(){
+    let userBox = '';
+    users.forEach((user) => {
     userBox += ` <div class = "user">
     <img src="${user.profileImage}" alt="${user.firstName}">
     ${user.firstName} ${user.lastName}</div>
     `
     usersContainer.innerHTML = userBox;
 });
+}
 
 function removeFirstUser(){
-
+    // removes first item in the array
+    users.shift();
+    renderUsers();
 };
 
 function removeLastUser(){
-
+    // removes last item in the array
+    users.pop();
+    renderUsers();
 };
