@@ -7,28 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="controls">
-        <button onclick="removeFirstUser()">Remove First User</button>
-        <button onclick="removeLastUser()">Remove Last User</button>
-        <button onclick="window.location.reload()">Refresh</button>
+    <div class="container">
+        <div id="controls">
+            <button onclick="removeFirstUser()">Remove First User</button>
+            <button onclick="removeLastUser()">Remove Last User</button>
+            <button onclick="window.location.reload()">Refresh</button>
+        </div>
+    
+        <div id="newUsersContainer">
+            <select name="" id="newUsers" onchange="getSelectedElements()">
+                
+            </select>
+        </div>
+    
+        <div id="users">
+            <img src="/images/img.jpg" alt="">
+        </div>
+    
+                
+        <!-- <div id="newProjects">
+            <select id="newProject" onchange="getSelectedProject()">
+            </select>                
+    
+                    <button onclick="addToStart()">Add to Start</button>
+                    <button onclick="addToEnd()">Add to End</button>
+                </div> -->
+                <!-- <div id="projects">
+                    <div class="project">Project 1</div>
+                    <div class="project">Project 2</div>
+                    <div class="project">Project 3</div>
+                </div> -->
     </div>
-
-    <div id="users">
-        <img src="/images/img.jpg" alt="">
-    </div>
-            
-    <!-- <div id="newProjects">
-        <select id="newProject" onchange="getSelectedProject()">
-        </select>                
-
-                <button onclick="addToStart()">Add to Start</button>
-                <button onclick="addToEnd()">Add to End</button>
-            </div> -->
-            <!-- <div id="projects">
-                <div class="project">Project 1</div>
-                <div class="project">Project 2</div>
-                <div class="project">Project 3</div>
-            </div> -->
 
     <script src="script.js"></script>
 </body>
