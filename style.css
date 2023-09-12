@@ -9,3 +9,31 @@
     grid-template-columns: auto auto auto;
     background-color: blueviolet;
 }
+
+.user{
+    min-width: 200px;
+    background-color: burlywood;
+    padding: 10px;
+    margin: 10px;
+}
+
+img{
+    max-width: 200px;
+    max-height: 180px;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 4rem 0;
+    gap: 20px;
+    border: none;
+}
+
+button{
+    border-radius: 10px 0 10px 0;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+}
